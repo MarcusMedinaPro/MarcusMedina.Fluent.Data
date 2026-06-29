@@ -13,7 +13,7 @@ public static class StringDataFormatExtensions
     /// <summary>
     /// Escapar ett fält för CSV — omsluter med citattecken om det behövs.
     /// </summary>
-    /// <param name="value">Strängen att escaoa.</param>
+    /// <param name="value">Strängen att escapa.</param>
     /// <param name="delimiter">Avgränsare (standard komma).</param>
     /// <example>
     /// "hello, world".ToCsvField() → "\"hello, world\""
@@ -95,7 +95,7 @@ public static class StringDataFormatExtensions
     /// <summary>
     /// Escapar en sträng för inbäddning i JSON (lägger till omvända snedstreck).
     /// </summary>
-    /// <param name="value">Strängen att escaoa.</param>
+    /// <param name="value">Strängen att escapa.</param>
     /// <example>
     /// "say \"hi\"".ToJsonString() → "say \\\"hi\\\""
     /// </example>
@@ -153,9 +153,9 @@ public static class StringDataFormatExtensions
     /// <summary>
     /// Escapar en sträng för säker inbäddning i XML.
     /// </summary>
-    /// <param name="value">Strängen att escaoa.</param>
+    /// <param name="value">Strängen att escapa.</param>
     /// <example>
-    /// "<tag>".ToXmlContent() → "&amp;lt;tag&amp;gt;"
+    /// <c>"&lt;tag&gt;".ToXmlContent() → "&amp;lt;tag&amp;gt;"</c>
     /// </example>
     public static string ToXmlContent(this string value)
     {
@@ -168,7 +168,7 @@ public static class StringDataFormatExtensions
     /// </summary>
     /// <param name="value">Den XML-escapade strängen.</param>
     /// <example>
-    /// "&amp;lt;tag&amp;gt;".FromXmlContent() → "<tag>"
+    /// <c>"&amp;lt;tag&amp;gt;".FromXmlContent() → "&lt;tag&gt;"</c>
     /// </example>
     public static string FromXmlContent(this string value)
     {
