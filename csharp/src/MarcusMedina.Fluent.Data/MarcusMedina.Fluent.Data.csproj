@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <LangVersion>14.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <RootNamespace>MarcusMedina.Fluent.Data</RootNamespace>
+    <PackageId>MarcusMedina.Fluent.Data</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Marcus Medina</Authors>
+    <Company>MarcusMedinaPro</Company>
+    <Description>Fluent data format extensions for CSV, JSON, and XML in .NET</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/MarcusMedinaPro/MarcusMedina.Fluent.Data</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MarcusMedinaPro/MarcusMedina.Fluent.Data</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>fluent;data;csv;json;xml;format;extensions;dotnet</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+</Project>
