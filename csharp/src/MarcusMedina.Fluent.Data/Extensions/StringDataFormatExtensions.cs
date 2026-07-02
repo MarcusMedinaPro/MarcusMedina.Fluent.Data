@@ -144,7 +144,7 @@ public static class StringDataFormatExtensions
             using var doc = JsonDocument.Parse(value);
             return true;
         }
-        catch
+        catch (JsonException)
         {
             return false;
         }
