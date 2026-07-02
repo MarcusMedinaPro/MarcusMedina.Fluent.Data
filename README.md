@@ -129,7 +129,7 @@ MIT — see [LICENSE](https://github.com/MarcusMedinaPro/MarcusMedina.Fluent.Dat
 
 This library was written by **Marcus Medina** together with **Claude Code** (Anthropic) — not through "vibe coding" where you just describe and accept, but through genuine collaboration: planning together, reviewing each other's decisions, pushing back when something felt wrong, and iterating until the result felt right.
 
-The goal was always to write code worth reading — the kind a student can open, understand, and learn from. AI was a partner in that process, not a shortcut around it.
+The goal was always to write code worth reading and code worth using — the kind a student can open, understand, and learn from, and the kind any programmer can drop into real, professional work without wanting to rewrite it from scratch. AI was a partner in that process, not a shortcut around it.
 
 If you're curious about this way of working, the source code and git history are open. Every decision has a reason behind it.
 
