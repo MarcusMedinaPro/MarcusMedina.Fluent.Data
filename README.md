@@ -13,7 +13,9 @@
 
 Convert between strings, objects, and structured data with a clean fluent API — perfect for file import/export, API responses, and data transformation pipelines.
 
-> **Story:** _TODO — ask Marcus for the real background behind this package._
+> This started as a C++ tool built for a tenant association — reading laundry-room access-tag logs to work out who kept stealing other residents' booked slots. Years later it turned into a fun assignment for my students: read the logs, identify whose tag was used, work out who went in and out and how long they stayed — extended so we could also track people entering and leaving the building itself. It's stuck with me ever since as a reminder never to get sloppy with CSV/JSON when importing real-world data.
+>
+> In this case, I wanted a fluent layer solid enough that I'd trust it with real log data again, not just toy examples.
 
 ---
 
