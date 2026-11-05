@@ -15,6 +15,12 @@ public static class ObjectDataFormatExtensions
         WriteIndented = false
     };
 
+    // Cached (CA1869): creating JsonSerializerOptions per call is expensive and defeats the metadata cache.
+    private static readonly JsonSerializerOptions IndentedJsonOptions = new(JsonOptions)
+    {
+        WriteIndented = true
+    };
+
     /// <summary>
     /// Serialiserar ett objekt till JSON-sträng.
     /// </summary>
@@ -25,9 +31,7 @@ public static class ObjectDataFormatExtensions
     /// </example>
     public static string ToJson<T>(this T? value, bool writeIndented = false)
     {
-        var options = writeIndented
-            ? new JsonSerializerOptions(JsonOptions) { WriteIndented = true }
-            : JsonOptions;
+        var options = writeIndented ? IndentedJsonOptions : JsonOptions;
         return JsonSerializer.Serialize(value, options);
     }
 
